@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+:root {
+    --bs--background-color: #FFC107;
+    --bs2--background-color: #FFA000;
+    --main--color: #FFFFFF;
+    --h4--color: #000000;
+    --p--color: #0000008f;
+}
+
+/* cabeçalho */ 
+.cabecalho-logo {
+    width: 100%;
+    height: 50px;
+    background-color:var(--bs--background-color);
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 2px 0;
+    background-color: var(--bs2--background-color);
+    box-shadow: 10px 10px 10px 10px #815508dc;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FDFDFD;
+}
+
+.cabecalho-logo img {
+   width: 150px;
+}
+
+/*titulo da pagina*/
+h1 {
+    color: #FFA000;
+    padding: 50px 0 40px 180px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/*preparo das receitas*/
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#serve p {
+    color: #176902;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px 25px 10px 0;
+    border: 0.5px solid green;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+h3 {
+    color: #FFA000;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.bolo {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--h4--color);
+    text-align: center;
+    border: 0.5px solid #FFFFFF;
+    box-shadow: 10px 10px 10px 5px #FFFFFF;
+    margin-top: 50px;
+}
+
+/*lista de ingredientes*/
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.lista-de-ingredientes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+ul {
+    list-style: none;
+    margin-right: 290px;
+    font-size: 20px;
+    font-weight: 100;
+    color: var(--p--color);
+}
+
+.lista-de-ingredientes iframe {
+   margin-right: 110px;
+}
+
+.preparo {
+    width: 33%;   
+    display: flex; 
+    flex-direction: column;
+    margin-left: 160px;
+}
+
+.preparo p {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    color: var(--p--color);
+}
+
+/* rodape */
+.footer  {
+    width: 100%;
+    background-color: var(--bs--background-color);
+    height: 100px;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: var(--main--color);
+    font-size: 18px;
+    font-weight: 700;
+}

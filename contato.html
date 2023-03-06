@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/contato.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body>
+
+    <!--cabeçalho-->
+    <header>
+        <div class="cabecalho-logo">
+            <img src="img/logo1.png" alt="">
+        </div>
+
+        <div class="link">
+            <a href="index.html">inicio</a>
+            <a href="receitas.html">Receitas</a>
+            <a href="risoto.html">Risoto</a>
+        </div>
+
+    </header>
+
+    <section class="secao-img">
+        <div class="info">
+             <p>manda um<br> 
+                alô :) </p>
+        </div>
+    </section>
+<!--Formulario-->
+    <section class="container">
+        <div>
+            <img src="img/contatoCelular.png" alt="">
+        </div>
+        <div class="contact">
+            <h2>Contato</h2>
+            <form action="/pagina-processa-dados-do-form" method="post">
+                <div>
+                    <label for="nome"></label>
+                    <input type="text" id="nome" placeholder="Nome"/>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="E-mail"/>
+                </div>
+                <div>
+                    <label for="msg"></label>
+                    <textarea id="msg" placeholder="Mensagem" class="mensagem"></textarea>
+                    <input type="button" value="Enviar" accesskey="s" class="btn">
+
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+      <!--Rodape-->
+      <footer class="footer">
+        <img src="img/logo1.png" alt="">
+        <p>&copy;  2022 omma - Todos os direitos são de vocês</p>
+    
+</footer>
+    
+</body>
+</html>
