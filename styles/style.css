@@ -30,7 +30,7 @@ body {
     gap: 40px;
     padding: 2px 0;
     background-color: var(--bs2--background-color);
-    box-shadow: 10px 10px 10px 10px #815508dc;
+    
 }
 
 .link a {
@@ -48,20 +48,22 @@ body {
 .secao-img {
     background-image: url(../img/logo2.png);
     width: 100%;
-    background-size: cover;
+    height: 95vh;
     background-repeat: no-repeat;
-    height: 70vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .info {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 700px;
     color: var(--main--color);
-    font-size: 70px;
+    font-size: 40px;
 }
+
 
 .receitas-semana {
     text-align: center;
@@ -82,6 +84,7 @@ body {
     font-size: 26px;
     font-weight: 600;
     margin: 100px 0;
+    flex-wrap: wrap;
 }
 
 button {
@@ -93,6 +96,7 @@ button {
     font-size: 24px;
     font-weight: 700;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .banner-final {
@@ -100,43 +104,37 @@ button {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 10px 10px 10px 10px #815508dc;
+    
 }
 
-h2 {
+.section-final-flex {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+    color: var(--main--color);
+    margin-left: 40px;
+}
+
+.section-final-flex h2 {
+    font-size: 2.8125rem;
     font-weight: 700;
-    font-size: 65px;
-    color: var(--main--color);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-left: 180px;
-    padding-top: 100px;   
-    margin-top: 100px;
+    
 }
-
-
-/* Banner final da pagina*/
-.banner-final p {
-    font-weight: 500;
-    font-size: 24px;
-    color: var(--main--color);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 25px;
-    padding-left: 180px;
-    width: 40%;
-}    
 
 /* rodape */
 .footer  {
     width: 100%;
+    height: 50px;
     background-color: var(--bs--background-color);
-    height: 100px;
     display: flex;
-    background-repeat: no-repeat;
-    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer img {
+    height: 70%;
 }
 
 .footer p {
@@ -144,6 +142,14 @@ h2 {
     align-items: center;
     padding-left: 30px;
     color: var(--main--color);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
+}
+ 
+
+@media (max-width: 600px){
+    .info p {
+        font-size: 25px;
+        margin-right: 845px;
+    }
 }
